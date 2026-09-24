@@ -15,11 +15,19 @@ a { color: var(--color-accent); }
 img { max-width: 100%; height: auto; display: block; }
 :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
 
-.section, .hero, .site-header, .site-footer {
+.section, .site-footer {
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
 }
+
+.site-header {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+}
+
 .hero {
+  width: min(100% - 2rem, 86rem);
+  margin-inline: auto;
   padding-block: var(--space-4);
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
