@@ -31,7 +31,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .hero-image {
   width: 100%;
-  max-width: 480px;
+  max-width: 960px;
   justify-self: end;
   border-radius: 1rem;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
