@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mark Francisco — Corporate Pilot & Software Engineer</title>
+  <meta name="description" content="Portfolio of Mark Francisco: Corporate Pilot and Aspiring Software Engineer looking to expand my knowledge and expertise within the tech industry.">
+  <link rel="icon" href="assets/images/icons/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">Mark Francisco</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About
+      </a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>I design and build [what you make].</h1>
+      <p>A Corporate Pilot and Aspiring Software Engineer looking to expand my knowledge and expertise within the tech industry.
+        This website is to showcase my accumulated work over the years.</p>
+      <a class="button" href="#work">See my work</a>
+    </section>
+
+    <section id="work" class="section">
+      <h2>Selected work</h2>
+      <div id="project-grid" class="project-grid"><!-- filled by js/main.js from js/projects.js --></div>
+    </section>
+
+    <section id="about" class="section about">
+      <img src="assets/images/profile/portrait.jpg" alt="Portrait of Your Name" width="320" height="400">
+      <div>
+        <h2>About</h2>
+        <p>Short bio: background, what you care about, what you're doing now.</p>
+        <a href="assets/docs/resume.pdf">Download résumé (PDF)</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Name <input name="name" required maxlength="120"></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Message <textarea name="message" rows="5" required maxlength="5000"></textarea></label>
+        <button class="button" type="submit">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span> Your Name</footer>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

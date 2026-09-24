@@ -1,0 +1,26 @@
+/* Reset, typography, page layout */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font: 1.125rem/1.65 var(--font-body);
+}
+h1, h2, h3 { font-family: var(--font-heading); line-height: 1.15; margin: 0 0 var(--space-2); }
+h1 { font-size: clamp(2.25rem, 6vw, 4rem); max-width: 18ch; }
+h2 { font-size: 1.75rem; }
+p { max-width: 65ch; }
+a { color: var(--color-accent); }
+img { max-width: 100%; height: auto; display: block; }
+:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+
+.section, .hero, .site-header, .site-footer {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+.hero { padding-block: var(--space-4); }
+.section { padding-block: var(--space-4); border-top: 1px solid var(--color-line); }
+.site-footer { padding-block: var(--space-3); color: var(--color-muted); }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

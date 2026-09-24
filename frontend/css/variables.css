@@ -1,0 +1,29 @@
+/* Design tokens: change these first to restyle the whole site */
+:root {
+  --color-bg: #fbfaf7;
+  --color-text: #1d2a2e;
+  --color-muted: #5d6b70;
+  --color-accent: #1f6f78;
+  --color-surface: #ffffff;
+  --color-line: #dcd8cf;
+
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-heading: "Instrument Sans", system-ui, sans-serif;
+
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --max-width: 68rem;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #12191b;
+    --color-text: #e9efef;
+    --color-muted: #9fb0b3;
+    --color-accent: #6cc4cc;
+    --color-surface: #1a2427;
+    --color-line: #2b383b;
+  }
+}
