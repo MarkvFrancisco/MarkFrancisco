@@ -1,11 +1,11 @@
 // Add, remove or reorder projects here. No HTML editing needed.
 const projects = [
   {
-    title: "Project name",
-    description: "One sentence: the problem and what you did.",
+    title: "Aspect Aviation",
+    description: " Flying Tips & Tutorials | Pilot Lifestyle & Adventures",
     image: "assets/images/projects/project-1.jpg",
     alt: "Screenshot of Project name",
-    tags: ["Design", "Development"],
-    link: "https://example.com"
+    tags: ["Travel", "Aviation", "YouTube", "Pilot Lifestyle"],
+    link: "https://www.youtube.com/@AspectAviation"
   }
 ];
